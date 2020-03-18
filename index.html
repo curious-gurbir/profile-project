@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="menu-window">
+		<div id="menu-pallete">
+			<span class="menu-text" id="mt1" onclick="menu(1)"><a href="home.html" target="bif">Home</a></span>
+			<span class="menu-text" id="mt2" onclick="menu(2)"><a href="edu.html" target="bif">Education</a></span>
+			<span class="menu-text" id="mt3" onclick="menu(3)"><a href="fam.html" target="bif">Family</a></span>
+			<span class="menu-text" id="mt4" onclick="menu(4)"><a href="places.html" target="bif">Places</a></span>
+			<span class="menu-text" id="mt5" onclick="menu(5)"><a href="hobbies.html" target="bif">Hobbies</a></span>
+		</div>
+	</div>
+	<div id="body-window">
+		<iframe src="places.html" name="bif" id="if1"></iframe>
+	</div>
+	<script type="text/javascript">
+		function menu(x){
+			var mt1 = document.getElementById("mt1");
+			var mt2 = document.getElementById("mt2");
+			var mt3 = document.getElementById("mt3");
+			var mt4 = document.getElementById("mt4");
+			var mt5 = document.getElementById("mt5");
+			mt1.style.color="#7c7c7c";
+			mt2.style.color="#7c7c7c";
+			mt3.style.color="#7c7c7c";
+			mt4.style.color="#7c7c7c";
+			mt5.style.color="#7c7c7c";
+			switch(x){
+				case 1:
+					mt1.style.color="white";
+				break;
+				case 2:
+					mt2.style.color="white";
+				break;
+				case 3:
+					mt3.style.color="white";
+				break;
+				case 4:
+					mt4.style.color="white";
+				break;
+				case 5:
+					mt5.style.color="white";
+				break;
+			}
+		}
+	</script>
+</body>
+</html>
